@@ -3,10 +3,13 @@
 {% block title %} Posts {% endblock title%}
 
 {% block content %}
-{%  for post in post_list %}
-<li> <a href="{% url 'post_detail' post.id %}">
-                {{ post.title }}</a>
-</li>
-{% endfor%}
+<h1>All Entries </h1>
+<ul>
+        {%  for post in post_list %}
+        <li> <a href="{% url 'post_detail' post.id %}">
+                        {{ post.title }}</a>
+        </li>
 
+        {% endfor%}
+</ul>
 {% endblock content%}

@@ -1,5 +1,5 @@
 from django.views.generic import ListView, DetailView
-from django.views.generic import CreateView
+from django.views.generic.edit import CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Post
 
@@ -15,4 +15,4 @@ class PostDetailView(DetailView):
 class PostCreateView(LoginRequiredMixin, CreateView):
     template_name = "blog/new.html"
     model = Post
-    fields = ["title", "author", "body"]
+    fields = ['title', 'author', 'body']

@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
-{% block title %} Create Post {% endblock title%}
+{% block title %} New Post {% endblock title%}
 
 {% block content%}
-<h1> create a post</h1>
+<h1> create Post</h1>
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
