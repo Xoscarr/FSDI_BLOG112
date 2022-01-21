@@ -10,6 +10,7 @@
 
     <input type="submit" vaule="Log in" class="btn btn-success">
 </form>
-<small>Don't have an account <a href="{% url 'signup' %}">Click here </a>to register</small>
+<small>Don't have an account <a href="{% url 'signup' %}">Click here </a>to register</small><br>
+<small>Need to reset your password? <a href="{% url 'password_reset' %}">Click here </a> to reset</small>
 
 {% endblock content %}

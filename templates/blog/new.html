@@ -3,11 +3,11 @@
 {% block title %} New Post {% endblock title%}
 
 {% block content%}
-<h1> create Post</h1>
+<h1> Create post</h1>
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
 
-    <input type="submit" vaule="Create" class="btn btn-success">
+    <input type="submit" value="Create" class="btn btn-success">
 </form>
 {% endblock content %}
