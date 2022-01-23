@@ -1,8 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title%} Home {% endblock title%}
 
 {% block content%}
-<h1> Welcome to my Fashion Blog</h1>
-<p> you will find ____ and _____ here </p>
+
+<h1 style="margin-left: 20px; display: flex; justify-content: center; font-size:60px;"> Welcome to my Fashion Blog</h1>
+<p style="font-size: 20px; display: flex; justify-content: center; "> Here you will find the latest high
+    fashion trends and streetware on the internet </p>
+
+<img src="{% static 'img/fashion.JPG' %}">
+
+
+
+
 {% endblock content %}

@@ -11,3 +11,8 @@ body {
 h1 {
   font-weight: 200;
 }
+
+.main {
+  margin: 10px;
+  padding: 10px;
+}
